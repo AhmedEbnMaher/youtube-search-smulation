@@ -1,0 +1,126 @@
+@import '../../assets/scss/app.scss';
+.root{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $primary-color;
+    height: $nav-height;
+    border-bottom: 1px solid $component-border-color;
+    @media (max-width:$small) {
+       background-color: $mobile-background-color;
+       position: absolute; 
+     }
+
+    .content{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        @media (max-width:$small) {
+            margin-left: 0;
+           }
+    
+    }
+    .search-components{
+        display: flex;
+        width: 50%;
+         margin-left: 10%;
+         @media (max-width:$small) {
+         width: 70%;
+         display: block;
+         margin-left: 5%;
+         padding: 0;
+       
+         }
+         
+    }
+    .search-input{
+        height:  $search-height;
+        outline: none;
+        border: 1px solid $component-border-color;
+        width: 80%;
+        margin-top: 10px;
+        border-radius: $border-reduis 0 0 $border-reduis;
+        @media (max-width:$small) {
+            height: 20px;
+            margin-top: 15px;
+            border-radius: 2px 2px 2px 2px;
+            display: none;
+           
+         }
+    }
+    .search-button{
+        background-color:$secondary-color ;
+        height: $search-height + 4px;
+        border: 1px solid $component-border-color;
+        width:60px;
+        border-radius:0 $border-reduis $border-reduis 0;
+        margin-top: 10px;
+        cursor: pointer;
+        @media (max-width:$small) {
+         display: none;
+           
+         }
+    }
+    .search-button-mobile{
+        margin-top: 13px;
+        border: none;
+        background-color:$mobile-background-color;
+        margin-right: 5px;
+        cursor: pointer;
+        @media (min-width:$small) {
+            display: none;
+              
+            }
+    }
+    .search-icon{
+        color: $fonts-main-color;
+        font-size: 17px;
+        @media (max-width:$small) {
+          color: $primary-color;
+          margin-top: 5px;
+         }
+    
+    }
+    .region-code{
+        color: $fonts-main-color;
+        font-size: 12px;
+        font-weight: 600;
+        @media (max-width:$small) {
+            display: none;
+         }
+    }
+    .search-value{
+        font-size: 13px;
+        color: $primary-color;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-right: 20%;
+        @media (min-width:$small) {
+            display: none;
+         }
+    }
+    .full-screen-logo{
+        width:70px;
+        height:30px;
+        @media (max-width:$small) {
+            display: none;
+         }
+    }
+    .mobile-screen-logo{
+        margin-left: 10px;
+        width:50px;
+        height:30px;
+        @media (min-width:$small) {
+            display: none;
+         }
+    }
+    .search-input.view{
+        display: block;
+    }
+    .search-value.hide{
+        display: none;
+    }
+}

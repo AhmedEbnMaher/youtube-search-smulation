@@ -1,0 +1,17 @@
+@import '../../assets/scss/app.scss';
+.laoding-wraper{
+    height: 92vh;
+    .loading-content{
+        margin-top: 30vh;
+        text-align: center;
+        height: 100px;
+        color: $fonts-main-color;
+    }
+    .loading-icon{
+        font-size: 40px;
+    }
+    .loading-text{
+        font-size: 15px;
+    }
+
+}

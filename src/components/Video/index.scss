@@ -1,0 +1,43 @@
+@import '../../assets/scss/app.scss';
+.high-image{
+
+@media (max-width:$x-larg) {
+    display: block;
+}
+@media (max-width:$medim) {
+    display: none;
+}
+@media (max-width:$small) {
+    display: none;
+}
+
+}
+
+.medium-image{
+    @media (min-width:$x-larg) {
+        display: none;
+    }
+    @media (max-width:$x-larg) {
+        display: none;
+    }
+    @media (max-width:$medim) {
+        display: block;
+    }
+    @media (max-width:$small) {
+        display: none;
+    }
+}
+.defulte-image{
+    @media (min-width:$x-larg) {
+        display: none;
+    }
+    @media (max-width:$x-larg) {
+        display: none;
+    }
+    @media (max-width:$medim) {
+        display: none;
+    }
+    @media (max-width:$small) {
+        display: block;
+    }
+}

@@ -1,0 +1,60 @@
+@import'../../assets/scss/app.scss';
+.head-bar{
+    background-color: $secondary-color;
+    width: 76.5%;
+    border-bottom: 1px solid $component-border-color;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:$small) {
+        display: none;
+
+    }
+    .serch-result{
+        margin-top: 25px;
+        color: $fonts-secondary-color;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .filter{
+     margin-top: 20px;
+     color: $fonts-main-color;
+     font-size: 13px;
+     font-weight: 600;
+     cursor: pointer;
+    }
+    .filter-icon{
+        font-size: 25px;
+        margin-bottom: -8px;
+    }
+  
+}
+
+.mobile-head-bar{
+    background-color: $primary-color;
+    width: 76.5%;
+    border-bottom: 1px solid $component-border-color;
+    height: 56px;
+    @media (min-width:$small) {
+        display: none;
+
+    }
+    .filter-results{
+        margin-top:15px ;
+        outline: none;
+        background-color:$secondary-color;
+        height: $search-height;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 1px solid $component-border-color;
+        width: 100px;
+        color: $fonts-secondary-color;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    
+    }
+.filter-results.space{
+    margin-left: 10px;
+}
+}

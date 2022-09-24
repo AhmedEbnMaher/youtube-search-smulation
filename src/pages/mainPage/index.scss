@@ -1,0 +1,33 @@
+@import'../../assets/scss/app.scss';
+.container{
+    margin-top: 57px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: $secondary-color;
+    @media (max-width:$small) {
+      width: $full-width;
+      background-color: $primary-color;
+      padding:0;
+    }
+    
+      
+}
+.wraper{
+  width: 100%;
+  margin-left: 14%;
+
+.page-content{
+    display: flex;
+    margin-top: 10px;
+    }
+    
+.vedios-information{
+      width: 40%;
+      margin-left: 10px;
+    }
+}
